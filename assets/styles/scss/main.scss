@@ -110,8 +110,8 @@ a {
         background-color: #fff;
     }
     a {
-        margin-top: 20px;
         @include buttonStyle ();
+        margin-top: 20px;
     }
 }
 
@@ -120,11 +120,11 @@ a {
     width: 90%;
     margin: 20px auto 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-columns: repeat(auto-fill, 280px);
     justify-content: center;
     .bloc {
         position: relative;
-        margin: 0 0 30px 20px;
+        margin-bottom: 10px;
         img {
             height: 100%;
         }
@@ -138,6 +138,8 @@ a {
             flex-direction: column;
             color: #fff;
             padding: 30px;
+            width: 40%;
+            text-align: center;
             hr {
                 background-color: #fff;
                 height: 3px;

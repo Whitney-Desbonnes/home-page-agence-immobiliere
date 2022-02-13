@@ -117,7 +117,6 @@ a {
 }
 
 .agence a {
-  margin-top: 20px;
   background-color: #be7890;
   padding: 5px;
   text-transform: uppercase;
@@ -125,6 +124,7 @@ a {
   text-align: center;
   width: 150px;
   margin: 0 auto;
+  margin-top: 20px;
 }
 
 .annonces {
@@ -132,8 +132,8 @@ a {
   margin: 20px auto 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (300px)[auto-fill];
-      grid-template-columns: repeat(auto-fill, 300px);
+  -ms-grid-columns: (280px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 280px);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -141,7 +141,7 @@ a {
 
 .annonces .bloc {
   position: relative;
-  margin: 0 0 30px 20px;
+  margin-bottom: 10px;
 }
 
 .annonces .bloc img {
@@ -169,12 +169,24 @@ a {
           flex-direction: column;
   color: #fff;
   padding: 30px;
+  width: 40%;
+  text-align: center;
 }
 
 .annonces .bloc .encart hr {
   background-color: #fff;
   height: 3px;
   width: 25px;
+}
+
+@media only screen and (min-width: 568px) {
+  .annonces {
+    -ms-grid-columns: (2fr)[auto-fill];
+        grid-template-columns: repeat(auto-fill, 2fr);
+  }
+  .annonces .bloc {
+    margin: 10px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
