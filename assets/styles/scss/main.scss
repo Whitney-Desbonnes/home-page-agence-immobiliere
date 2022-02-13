@@ -34,6 +34,48 @@ a {
     font-weight: bold;
 }
 
+// header 
+header {
+    text-align: center;
+    color: #fff;
+    .header__nav {
+        
+    }
+
+    .header__bottom {
+        position: relative;
+        img {
+            height: 100%;
+            min-height: 250px;
+            max-height: 700px;
+        }
+        .header__recherche {
+            h1 {
+                text-shadow: 1px 1px 10px #000;
+                text-transform: uppercase;
+            }
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 90%;
+            margin: auto;
+            right: 0;
+            left: 0;
+            form {
+                text-align: center;
+                background-color: #0000008f;
+                padding: 10px;
+                a {
+                    @include buttonStyle ();
+                    margin: 0;
+                    display: inline;
+                }
+            }
+        }
+
+    }
+}
+
 
 // section bloc image
 .container__images {
@@ -77,7 +119,7 @@ a {
 
         .swiper-button-next {
             color: #fff;
-            background-color: #0000008f;;
+            background-color: #0000008f;
             &::after {
                 font-size: 1rem;
             }
