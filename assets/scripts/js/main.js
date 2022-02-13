@@ -1,3 +1,13 @@
+// header nav
+let hamburger = document.querySelector('i');
+let nav = document.querySelector('.header__nav');
+
+function menuDeroulant () {
+  nav.classList.toggle('height-nav');
+}
+
+hamburger.addEventListener('click', menuDeroulant);
+
 // swiper on
 let swiper = new Swiper(".mySwiper", {
     spaceBetween: 10,

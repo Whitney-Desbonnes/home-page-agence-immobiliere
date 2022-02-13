@@ -30,6 +30,10 @@ a {
     color: $textColor;
 }
 
+ul {
+    list-style: none;
+}
+
 .bold {
     font-weight: bold;
 }
@@ -37,13 +41,59 @@ a {
 // header 
 header {
     text-align: center;
-    color: #fff;
-    // .header__nav {
-        
-    // }
+    .header__top {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 10px auto 10px auto;
+        p {
+            width: 50%;
+            text-align: left;
+            span {
+                color: $buttonColor;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 2rem;
+                letter-spacing: 0.3rem;
+            }
+        }
+        i {
+            font-size: 2rem;
+            color: $buttonColor;
+            cursor: pointer;
+            width: 50%;
+            text-align: end;
+        }
+        .header__nav {
+            width: 100%;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in;
+            ul {
+                li {
+                    background-color: #2d3d64b8;
+                    padding: 15px 0;
+                    border-bottom: 2px solid #fff;
+                    a {
+                        &:hover {
+                            color: $buttonColor;
+                            transition: .5s;
+                        }
+                    }
+                }
+            }
+        }
 
+        .height-nav {
+            max-height: 600px;
+            transition: max-height 1s ease-in;
+        }
+
+    }
     .header__bottom {
         position: relative;
+        color: #fff;
         img {
             height: 100%;
             min-height: 400px;
@@ -53,6 +103,7 @@ header {
             h1 {
                 text-shadow: 1px 1px 10px #000;
                 text-transform: uppercase;
+                margin-bottom: 20px;
             }
             position: absolute;
             top: 50%;
@@ -228,7 +279,6 @@ footer {
             }
             ul {
                 display: flex;
-                list-style: none;
                 li {
                     margin: 0 5px;
                     img {

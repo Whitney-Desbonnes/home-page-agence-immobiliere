@@ -26,6 +26,35 @@
     }
 }
 @media only screen and (min-width: 768px) {
+    // header 
+    header {
+        .header__top {
+            align-items: center;
+            p {
+                width: 30%;
+            }
+            i {
+                display: none;
+            }
+            .header__nav {
+                overflow: visible;
+                width: 70%;
+                max-height: 700px;
+                ul {
+                    display: flex;
+                    justify-content: end;
+                    li {
+                        background-color: transparent;
+                        margin: 0 10px;
+                        a {
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     // section bloc image
     .container__images {
         grid-template-columns: repeat(4, 1fr);
