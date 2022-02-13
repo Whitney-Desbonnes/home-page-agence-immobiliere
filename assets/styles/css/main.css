@@ -186,6 +186,8 @@ footer {
 
 footer .footer__logo {
   text-align: center;
+  letter-spacing: 0.3rem;
+  padding: 10px;
 }
 
 footer .footer__contact {
@@ -204,7 +206,7 @@ footer .footer__contact {
 }
 
 footer .footer__contact .elements {
-  margin: 20px 10px;
+  margin: 15px 10px;
 }
 
 footer .footer__contact .footer__social-media {
@@ -234,20 +236,15 @@ footer .footer__contact .footer__social-media ul {
   list-style: none;
 }
 
+footer .footer__contact .footer__social-media ul li {
+  margin: 0 5px;
+}
+
 footer .footer__contact .footer__social-media ul li img {
   width: 35px;
 }
 
 footer .footer__contact a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: #be7890;
   padding: 5px;
   text-transform: uppercase;
