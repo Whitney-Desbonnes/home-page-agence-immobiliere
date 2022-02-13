@@ -40,7 +40,7 @@ header .header__bottom {
 
 header .header__bottom img {
   height: 100%;
-  min-height: 250px;
+  min-height: 400px;
   max-height: 700px;
 }
 
@@ -64,6 +64,22 @@ header .header__bottom .header__recherche form {
   text-align: center;
   background-color: #0000008f;
   padding: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  row-gap: 0.3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .header__bottom .header__recherche form select {
+  height: 32px;
+}
+
+header .header__bottom .header__recherche form input {
+  height: 32px;
 }
 
 header .header__bottom .header__recherche form a {
@@ -74,8 +90,7 @@ header .header__bottom .header__recherche form a {
   text-align: center;
   width: 150px;
   margin: 0 auto;
-  margin: 0;
-  display: inline;
+  margin-top: 10px;
 }
 
 .container__images {
@@ -316,6 +331,20 @@ footer .footer__mentions p {
 }
 
 @media only screen and (min-width: 568px) {
+  header .header__bottom .header__recherche form {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    -webkit-column-gap: 0.5rem;
+            column-gap: 0.5rem;
+    row-gap: 0;
+  }
+  header .header__bottom .header__recherche form a {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+  }
   .annonces {
     -ms-grid-columns: (2fr)[auto-fill];
         grid-template-columns: repeat(auto-fill, 2fr);
@@ -340,6 +369,17 @@ footer .footer__mentions p {
 }
 
 @media only screen and (min-width: 992px) {
+  header .header__bottom .header__recherche form {
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  header .header__bottom .header__recherche form a {
+    -ms-grid-column: 5;
+    grid-column: 5;
+    margin: 0;
+  }
   .container__images {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);

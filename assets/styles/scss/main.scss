@@ -46,7 +46,7 @@ header {
         position: relative;
         img {
             height: 100%;
-            min-height: 250px;
+            min-height: 400px;
             max-height: 700px;
         }
         .header__recherche {
@@ -65,10 +65,19 @@ header {
                 text-align: center;
                 background-color: #0000008f;
                 padding: 10px;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                row-gap: 0.3rem;
+                justify-content: center;
+                select {
+                    height: 32px;
+                }
+                input {
+                    height: 32px
+                }
                 a {
                     @include buttonStyle ();
-                    margin: 0;
-                    display: inline;
+                    margin-top: 10px;
                 }
             }
         }
