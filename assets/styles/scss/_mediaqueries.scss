@@ -1,0 +1,41 @@
+@media only screen and (min-width: 568px) {
+
+}
+@media only screen and (min-width: 768px) {
+    // section bloc image
+    .container__images {
+        grid-template-columns: repeat(4, 1fr);
+        width: 80%;
+    }
+
+    // section derniere annonces
+    .derniere-annonces {
+        width: 80%;
+    }
+
+    // section annonces 
+    .annonces {
+        width: 80%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    // section bloc image
+    .container__images {
+        grid-template-columns: repeat(4, 1fr);
+        width: 70%;
+    }
+
+    // section derniere annonces
+    .derniere-annonces {
+        width: 70%;
+    }
+
+    // section annonces 
+    .annonces {
+        grid-template-columns: repeat(2, 1fr);
+        width: 70%;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    
+}

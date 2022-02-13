@@ -1,0 +1,16 @@
+// pour centrer un(des) bloc(s)
+@mixin centrerBloc () {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin buttonStyle () {
+    background-color: $buttonColor;
+    padding: 5px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    width: 150px;
+    margin: 0 auto;
+}

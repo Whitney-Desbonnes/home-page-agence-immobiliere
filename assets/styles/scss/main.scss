@@ -1,0 +1,172 @@
+// police GoogleFonts
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap');
+@import './color';
+@import './mixins';
+
+// reset global
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// style pre config
+body {
+    font-family: 'Tajawal', sans-serif;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: $textColor;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+// section bloc image
+.container__images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    max-width: 1300px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    .elements {
+        margin-bottom: 30px;
+        img {
+            width: 100px;
+        }
+    }
+}
+
+
+// section derniere annonces
+.derniere-annonces {
+    width: 90%;
+    margin: 0 auto 20px auto;
+    hr {
+        margin: 0 0 10px 0;
+        width: 50px;
+        height: 3px;
+        background-color: #000;
+    }
+    // swiper style
+    .swiper {
+        .swiper-wrapper {
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                color: #fff;
+                background: #000;
+                @include centrerBloc();
+            }
+        }
+
+        .swiper-button-next {
+            color: #fff;
+            background-color: #0000008f;;
+            &::after {
+                font-size: 1rem;
+            }
+        }
+        .swiper-button-prev {
+            color: #fff;
+            background-color: #0000008f;
+            &::after {
+                font-size: 1rem;
+            }
+        }
+        
+    }
+}
+
+// section agence
+.agence {
+    background-color: $bgcAgence;
+    color: #fff;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    .agence__title{
+        text-align: center;
+    }
+    hr {
+        margin: 0 auto 20px auto;
+        width: 50px;
+        height: 3px;
+        background-color: #fff;
+    }
+    a {
+        margin-top: 20px;
+        @include buttonStyle ();
+    }
+}
+
+// section annonces 
+.annonces {
+    width: 90%;
+    margin: 20px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    .bloc {
+        position: relative;
+        margin: 0 0 30px 20px;
+        img {
+            height: 100%;
+        }
+        .encart {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #0000008f;
+            height: 100%;
+            @include centrerBloc();
+            flex-direction: column;
+            color: #fff;
+            padding: 30px;
+            hr {
+                background-color: #fff;
+                height: 3px;
+                width: 25px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import './mediaqueries';
