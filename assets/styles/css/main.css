@@ -425,14 +425,14 @@ footer .footer__mentions p {
             align-items: center;
   }
   header .header__top p {
-    width: 30%;
+    width: 20%;
   }
   header .header__top i {
     display: none;
   }
   header .header__top .header__nav {
     overflow: visible;
-    width: 70%;
+    width: 80%;
     max-height: 700px;
   }
   header .header__top .header__nav ul {
@@ -474,6 +474,7 @@ footer .footer__mentions p {
     -ms-grid-column: 5;
     grid-column: 5;
     margin: 0;
+    width: auto;
   }
   .container__images {
     -ms-grid-columns: (1fr)[4];
